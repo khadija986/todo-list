@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>to-do list</title>
+    <!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <section id="title">
+    <h1>MY TO-DO LIST</h1>
+  </section><hr>
+  <div class="content">
+    <div class="left">
+      <div id="mylist"><i class="bx bx-list-plus"></i>My Checklist:</div>
+      <section>
+        <input type="text" placeholder="note a task..." id="textarea"><button class="btn" type="submit">save</button>           </section>
+      </section> 
+      <div class="taches">
+        <span>Apprendre React<input type="checkbox"></span>
+        <span>Apprendre Python<input type="checkbox"></span>
+        <span>Terminer ma certification cisco<input type="checkbox"></span>
+        <span>Réaliser mon portfolio<input type="checkbox"></span>
+        <span>Terminer mon projet en langage C<input type="checkbox"></span>
+      </div>
+    </div>
+    <div class="right">
+      <div id="mylist"><i class="bx bx-list-plus"></i>My finished tasks:</div>
+      <section>
+        <input type="text" id="searchbar" placeholder="search a task..."><button class="btn" type="button"><i class="bx bx-search"></i></button>
+      </section>
+      <section class="finished">
+        <ul spellcheck="true">
+          <li>Pratiquer mon frontend</li>
+          <li>Réviser mes maths discrètes</li>
+          <li>Installer Xampp</li>
+          <li>Installer MySQL</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

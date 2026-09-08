@@ -13,15 +13,15 @@ btn.onclick = function(){
     tachesection.appendChild(tache);
     //vider l'input quand on appuie sur plus
     textarea.value = "";
-    }}
-     //mettre le paragraphe dans la section finished quand on clique dessus
-     tache.onclick = function(){
-      var tachefinie = document.createElement('li')
-      tachefinie.innerText = tache.innerText;
-      finished.appendChild(tachefinie);
-      tachefinie.classList.add('tachefinie');
-      tache.innerText = "";
+    //déplacer la tache dans la section finished
+    tache.onclick = function(){
+      
+      finished.appendChild(tache);
+      tache.classList.remove('tache');
+      tache.classList.add('tachefinie');
      
+    }};
+   
     };
     
     

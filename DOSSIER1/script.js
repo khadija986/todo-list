@@ -15,14 +15,16 @@ btn.onclick = function(){
     textarea.value = "";
     //déplacer la tache dans la section finished
     tache.onclick = function(){
-      
       finished.appendChild(tache);
       tache.classList.remove('tache');
-      tache.classList.add('tachefinie');
-     
-    }};
+       tache.classList.add('tachefinie');
+  };
+  tache.addEventListener('click', function(){
+    var tachefinie = tache.innerHTML;
+    finished.removeChild('tachefinie');});
    
     };
+  }
     
     
    

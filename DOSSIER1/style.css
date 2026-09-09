@@ -108,8 +108,6 @@ i{
     transform: scale(1);
     cursor: pointer;
     animation: anime 0.5s linear;
-    background-color: azure;
-}
-.tachefinie:hover{
     background-color: brown;
+    text-decoration: line-through;
 }

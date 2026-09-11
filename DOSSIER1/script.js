@@ -5,7 +5,7 @@ var finished = document.querySelector('.finished');
 btn.onclick = function(){
     if(textarea.value != ""){
         var tache = document.createElement('li')
-        //lorsque le contenu de l'input n'est pas vide, creer un element p qui serra la tache
+        //lorsque le contenu de l'input n'est pas vide, creer un element li qui serra la tache
     //reduire l'element a la meme valeur que ce qui est dans l'input
     tache.innerText = textarea.value;
     tache.classList.add('tache');
@@ -19,12 +19,9 @@ btn.onclick = function(){
       tache.classList.remove('tache');
        tache.classList.add('tachefinie');
   };
-  tache.addEventListener('click', function(){
-    var tachefinie = tache.innerHTML;
-    finished.removeChild('tachefinie');});
-   
+  tache.addEventListener('dblclick', function(){tache.remove();})
     };
-  }
+  };
     
     
    

@@ -46,6 +46,7 @@ body{
     margin: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
+    margin-bottom: 0px;
 }
 i{
     margin: 2px;
@@ -110,4 +111,8 @@ i{
     animation: anime 0.5s linear;
     background-color: brown;
     text-decoration: line-through;
+}
+#tip{
+    margin: 4px 20px;
+    font-size: 15px;
 }

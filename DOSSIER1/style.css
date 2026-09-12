@@ -7,24 +7,25 @@ body{
     align-items: center;
     background-color: aliceblue;
 }
-
-.content .left{ 
-    flex-direction: column;
-    width: 800px;
-    background-color: wheat;
-    height: 100vh;
-
-}
-.right{
-    flex-direction: column;
-   
-}
-
 .content{
     display: flex;
     flex-direction: row;
     max-height: fit-content;
 }
+
+.content .left{ 
+    flex-direction: column;
+    width: 800px;
+    height: 200vh;
+    background-image: url("../WhatsApp\ Image\ 2026-09-12\ at\ 11.19.40\ PM.jpeg");
+}
+.right{
+    flex-direction: column;
+    background-image: url("../WhatsApp\ Image\ 2026-09-12\ at\ 11.19.40\ PM\ \(1\).jpeg");
+    max-width: max-content;
+   
+}
+
 #title{
     font-style: oblique;
     font-size: 20px;
@@ -46,7 +47,7 @@ body{
     margin: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 i{
     margin: 2px;
@@ -56,11 +57,11 @@ i{
     font-size: 15px;
     cursor: pointer;
     border-radius: 0px 6px 6px 0px;
-    width: 35px;
+    width: 40px;
     padding: 5px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:bisque;
-    color:#000;
+    background-color:hotpink;
+    color: white;
     transition: rgba(0.8);
     border: 0;
 }
@@ -68,6 +69,7 @@ i{
     opacity: 0.8;
     box-shadow: 0cqw;
     background-color: floralwhite;
+    color: hotpink;
 }
 .btn:active{
     transform: scale(0.8);
@@ -78,7 +80,7 @@ i{
 .tache{
     word-break: break-all;
     margin:5px 20px;
-    background-color:bisque;
+    background-color:lightpink;
     border-color: white;
     border: 0.5px solid;
     padding: 10px 0;
@@ -86,6 +88,7 @@ i{
     transition: rgba(1);
     transform: scale(1);
     border-radius: 6px;
+    color: white;
     cursor: pointer;
     animation: anime 0.5s linear;
 }

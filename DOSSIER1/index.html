@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>to-do list</title>
-    <!-- Basic Icons -->
-<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
-<!-- Filled Icons -->
-<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
-<!-- Brand Icons -->
-<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
-
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+  
 <body>
+  <header>
   <section id="title">
-    <h1>MY TO-DO LIST</h1>
-  </section><hr>
+    <h1><i data-lucide="book-heart"></i>MY TO-DO LIST</h1>
+    <p>Little steps, big dreams</p>
+  </section>
+  </header>
   <div class="content">
     <div class="left">
-      <div id="mylist"><i class="bx bx-list-plus"></i>My Checklist:</div>
+      <div id="mylist1"><i data-lucide="list-checks"></i>My Checklist:</div>
       <section>
         <input type="text" placeholder="note a task..." id="textarea"><button class="btn" type="submit">+</button>           </section>
       </section> 
@@ -27,12 +26,18 @@
        </div>
     </div>
     <div class="right">
-      <div id="mylist"><i class="bx bx-list-plus"></i>My finished tasks:</div>
+      <div id="mylist2"><i data-lucide="circle-check"></i>My finished tasks:</div>
       <p id="tip"><em>Double click to delete one task</em></p>
       <div class="finished">
       </div>
     </div>
   </div>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
+
+

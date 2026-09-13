@@ -15,20 +15,20 @@ body{
 .content .left{ 
     flex-direction: column;
     width: 800px;
-    height: 100vh;
     background-image: url("../WhatsApp\ Image\ 2026-09-12\ at\ 11.19.40\ PM.jpeg");
     margin: 5px;
+    height: 100vh;
     border-radius: 5px;
     border: 1px solid brown;
 }
 .right{
     background-color:rgb(253, 235, 243);
     width:  500px;
+    height:100vh;
     margin: 5px;
     border-radius: 5px;
     align-items:center;
     border: 1px solid brown;
-    height: 100vh;
 }
 h1 svg{
     width: 40px;
@@ -205,8 +205,10 @@ header h1{
     }
     .left{
         max-width: fit-content;
+        max-width: 500px;
     }
     .right{
+        max-width: 500px;
         max-width: fit-content;
     }
     header h1{
@@ -214,8 +216,10 @@ header h1{
     }
     #textarea{
         max-width: 300px;
+        margin-left: 10px;
     }
     .btn{
         max-width: 40px;
+        margin-right: 5px;
     }
 }

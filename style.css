@@ -226,3 +226,29 @@ header h1{
         margin-right: 5px;
     }
 }
+@media(max-width: 900px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        max-width: fit-content;
+        width: 95%;
+    }
+    .left{
+        width: 430px;
+
+    }
+    .right{
+        width: 430px;
+    }
+    header{
+        width: 95%;
+    }
+    #textarea{
+        width: 350px;
+        margin-left: 10px;
+    }
+    .btn{
+        width: 40px;
+        margin-right: 5px;
+    }
+}

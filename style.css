@@ -204,12 +204,12 @@ header h1{
         max-width: fit-content;
     }
     .left{
-        max-width: 500px;
+        width: 400px;
         width: 90%;
 
     }
     .right{
-         max-width: 500px;
+        width: 400px;
         width: 90%;
     }
     header h1{

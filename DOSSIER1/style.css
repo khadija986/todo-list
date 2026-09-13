@@ -15,7 +15,7 @@ body{
 .content .left{ 
     flex-direction: column;
     width: 800px;
-    height: 200vh;
+    height: 100vh;
     background-image: url("../WhatsApp\ Image\ 2026-09-12\ at\ 11.19.40\ PM.jpeg");
     margin: 5px;
     border-radius: 5px;
@@ -28,6 +28,7 @@ body{
     border-radius: 5px;
     align-items:center;
     border: 1px solid brown;
+    height: 100vh;
 }
 h1 svg{
     width: 40px;
@@ -174,4 +175,25 @@ header h1{
 #tip{
     margin: 4px 20px;
     font-size: 15px;
+}
+#emptymessage{
+    text-align: center;
+    margin-top: 150px;
+}
+#emptymessage svg{
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color:deeppink;
+    color: rgb(253, 235, 243);
+    opacity: 0.09;
+}
+#emptymessage h3{
+    opacity: 0.2;
+}
+#emptymessage p{
+    opacity: 0.4;
+    font-family:monospace;
 }

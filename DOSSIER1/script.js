@@ -1,7 +1,7 @@
 var btn = document.querySelector('.btn');
 var textarea = document.getElementById('textarea');
 var tachesection = document.querySelector('.taches');
-var finished = document.querySelector('.finished');
+var finishedtask = document.querySelector('.finishedtask');
 btn.onclick = function(){
     if(textarea.value != ""){
         var tache = document.createElement('li')
@@ -15,12 +15,23 @@ btn.onclick = function(){
     textarea.value = "";
     //déplacer la tache dans la section finished
     tache.onclick = function(){
-      finished.appendChild(tache);
+      finishedtask.appendChild(tache);
       tache.classList.remove('tache');
        tache.classList.add('tachefinie');
+       emptymessage();
   };
-  tache.addEventListener('dblclick', function(){tache.remove();})
+  tache.addEventListener('dblclick', function(){tache.remove();
+    emptymessage();
+  })
     };
+    //fonction qui cache le message "aucune tache" des qu'une nouvelle tache est ajoutée dans finished
+    function emptymessage(){
+      const emptymessage = document.getElementById('emptymessage');
+      if(finishedtask.children.length === 0){
+        emptymessage.style.display = "block";
+      } else { emptymessage.style.display = "none";}
+    } emptymessage();
+
   };
     
     
